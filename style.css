@@ -1,0 +1,92 @@
+        #mark {
+            height: 2cm;
+            width: 2cm;
+            position: relative;
+            object-fit: cover;
+            margin: 0.25cm 0.5cm;
+        }
+        
+        .top {
+            background: #FFEEDD;
+            height: 2.5cm;
+        }
+        /*loading*/
+        
+        .loader {
+            /*設定框架: 寬度、實心、顏色*/
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            /* 邊框角度: 50%圓形 */
+            /*大小*/
+            width: 60px;
+            height: 60px;
+            /*動畫: 動畫名稱、秒數、線性時間函數*/
+            animation: spin 2s linear infinite;
+            /*置中: 周圍邊距大小*/
+            margin: 1.2cm auto;
+        }
+        /*關鍵幀 0%初始、100%結束*/
+        
+        @keyframes spin {
+            /* transform: rotate 旋轉*/
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .loading {
+            display: block;
+        }
+        /*網頁忙碌中*/
+        
+        #title {
+            font-family: cursive;
+            font-style: normal;
+            font-size: 1.2cm;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            color: white;
+        }
+        /*p*/
+        
+        p {
+            font-family: DFKai-sb;
+            font-size: 0.46cm;
+        }
+        /*hover*/
+        
+        .hover img {
+            position: absolute;
+            left: 43%;
+            width: 215px;
+            height: auto;
+        }
+        
+        .hover img:hover {
+            content: url('sp.png');
+        }
+        /*button*/
+        
+        .botton {
+            border: 8px solid #f3f3f3;
+            border-radius: 10%;
+            font-family: DFKai-sb;
+            font-size: 0.46cm;
+            background: white;
+        }
+        
+        .botton:hover {
+            font-size: 0.6cm;
+        }
+        
+        .end {
+            margin: 7cm auto;
+        }
+        /*背景*/
+        
+        body {
+            background-color: #f4a460;
+        }
